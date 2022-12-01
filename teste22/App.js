@@ -1,8 +1,10 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
+import BotaoPegarexto from "./components/BotaoPegarTexto/BotaoPegarTexto.js";
 import Cidades from "./components/Cidades/Cidades.js";
 import Estudante from "./components/Estudante/Estudante.js";
+import MyPokemon from "./components/Pokemon/MyPokemon.jsx";
 
 export default function App() {
   return (
@@ -13,7 +15,8 @@ export default function App() {
         curso="DD"
         universidade="UFC" ></Estudante> */}
 
-        <Cidades></Cidades>
+        <MyPokemon></MyPokemon>
+
       </Text>
       <StatusBar style="auto" />
     </View>
@@ -25,6 +28,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
   },
 });
